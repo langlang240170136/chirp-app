@@ -31,14 +31,19 @@
 <!-- MAIN -->
 <main class="flex-1 container mx-auto px-4 py-8">
 
-    <!-- HEADER -->
-    <div class="text-center mb-8">
-        <h1 class="text-4xl font-bold">🐦 Chirper Feed</h1>
-        <p class="text-base-content/60 mt-2">Tempat berbagi chirp sederhana</p>
+    <!-- HEADER (SUDAH DISESUAIKAN DENGAN GAMBAR) -->
+    <div class="max-w-2xl mx-auto">
+        <div class="card bg-base-100 shadow mt-8">
+            <div class="card-body">
+                <h1 class="text-3xl font-bold">Welcome to Chirper!</h1>
+                <p>This is your brand new Laravel app. Time to make it sing (or chirp)!</p>
+                <p class="mt-2 text-sm text-gray-600">Now this is live on the internet! 🎉</p>
+            </div>
+        </div>
     </div>
 
     <!-- CHIRP LIST -->
-    <div class="max-w-2xl mx-auto space-y-4">
+    <div class="max-w-2xl mx-auto space-y-4 mt-6">
 
         @forelse ($chirps as $chirp)
             <div class="card bg-base-100 shadow hover:shadow-lg transition">
